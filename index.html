@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Terrific Trio</title>
+</head>
+
+<body>
+
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li class="navbar"><a href="weather/weather.html" style="font-size: xxx-large;color: white; font-family: 'Space Mono', monospace;">Weather</a></li>
+                <li class="navbar"><a href="#"  style="font-size: xxx-large;color:white; font-family: 'Space Mono', monospace;">Calories</a></li>
+               
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="nischal">
+        <h1> &nbsp;B I L L<br> &nbsp;&nbsp;S P L I T</h1>
+
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="input">
+                <div class="bill-container">
+                    <div class="label-wrapper">
+                        <label for="inp-bill">Bill</label>
+                    </div>
+
+                    <div class="inp-wrapper">
+                        <input class="inp-text" type="text" name="inp-bill" id="inp-bill" >
+                        <img src="./images/icon-dollar.svg" alt="dollar-icon">
+                    </div>
+                </div>
+
+                <div class="tip-container">
+                    <div class="label-wrapper">
+                        <label for="inp-tip">Select Tip %</label>
+                    </div>
+                    <div class="btn-wrapper">
+                        <div class="btn tip">5%</div>
+                        <div class="btn tip">10%</div>
+                        <div class="btn tip ">15%</div>
+                        <div class="btn tip">25%</div>
+                        <div class="btn tip">50%</div>
+                        <input class="inp-text" type="text" name="inp-tip" id="inp-tip" placeholder="Custom" >
+                    </div>
+                </div>
+
+                <div class="people-container">
+                    <div class="label-wrapper">
+                        <label for="inp-people">Number of People</label>
+                        <div class="error-msg">Can't be zero</div>
+                    </div>
+
+                    <div class="inp-wrapper">
+                        <input class="inp-text" type="text" name="inp-people" id="inp-people" >
+                        <img src="./images/icon-person.svg" alt="person-icon">
+                    </div>
+                </div>
+            </div>
+
+            <div class="output">
+                <div class="line-wrapper">
+                    <div class="line-output">
+                        <div class="title-wrapper">
+                            <div class="title">Tip Amount</div>
+                            <div class="desc">/ person</div>
+                        </div>
+                        <div class="value">$0.00</div>
+                    </div>
+
+                    <div class="line-output">
+                        <div class="title-wrapper">
+                            <div class="title">Total</div>
+                            <div class="desc">/ person</div>
+                        </div>
+                        <div class="value">$0.00</div>
+                    </div>
+                </div>
+                <div class="btn reset">Reset</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
